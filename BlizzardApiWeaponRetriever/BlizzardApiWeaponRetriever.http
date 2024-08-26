@@ -1,0 +1,6 @@
+@BlizzardApiWeaponRetriever_HostAddress = http://localhost:5133
+
+GET {{BlizzardApiWeaponRetriever_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
