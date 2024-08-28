@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Runtime.CompilerServices;
@@ -7,50 +8,75 @@ using Microsoft.AspNetCore.Authentication.BearerToken;
 using Microsoft.OpenApi.Models;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using RestSharp;
-using RestSharp.Authenticators;
-using static BlizzardApiWeaponRetriever.IBlizzardApiService;
+using static System.Net.WebRequestMethods;
+
+
 
 
 namespace BlizzardApiWeaponRetriever
 {
-    public class BlizzardApiService : IBlizzardApiService, IDisposable
+    public class BlizzardApiService  
     {
-        readonly RestClient _client;
-        public OAuthClient _authClient;
+        private readonly HttpClient _httpClient;
+        private readonly string _clientId;
+        private readonly string _clientSecret;
+        private string _accessToken;
+    
+        
 
-        //public OAuthClient OAuthClient;
-        public string _accessToken;
-        public BlizzardApiService(string apiKey, string apiKeySecret, string baseUrl)
+        public BlizzardApiService(string clientId, string clientSecret)
         {
-
-            var options = new RestClientOptions("https://eu.api.blizzard.com/");
-            _client = new RestClient(options);
+            _httpClient = new HttpClient();
+            _clientId = Environment.GetEnvironmentVariable("BLIZZARD_CLIENT_ID");
+            _clientSecret = Environment.GetEnvironmentVariable("BLIZZARD_CLIENT_SECRET");
+           
         }
 
-        public async Task<ItemClassesIndex> GetItemClasses(string item)
+        private async Task<string> GetAccessTokenAsync()
         {
+            var authenticationString = $"{_clientId}:{_clientSecret}";
+            var base64String = Convert.ToBase64String(
+                System.Text.Encoding.ASCII.GetBytes(authenticationString));
 
+            var request = new HttpRequestMessage(HttpMethod.Post, "https://oauth.battle.net/token");
+            request.Headers.Authorization = new AuthenticationHeaderValue("Basic", base64String);
+ 
+            request.Content = new FormUrlEncodedContent(new[]
+            {
+                new KeyValuePair<string, string>("grant_type", "client_credentials")
+            });
+
+            var response = await _httpClient.SendAsync(request);
+            response.EnsureSuccessStatusCode();
+
+            var content = await response.Content.ReadAsStringAsync();
+            var tokenObject = JObject.Parse(content);
+            _accessToken = tokenObject["access_token"].ToString();
+
+            return _accessToken;
+
+        }
+
+
+        public async Task<string> GetItemClassesIndex()
+        {
             if (string.IsNullOrEmpty(_accessToken))
             {
-                _accessToken = _authClient.GetTokenOut();
+                _accessToken = await GetAccessTokenAsync();
             }
-            var response = await _client.GetAsync<BlizzardSingleWeapon<ItemClassesIndex>>(
-            "weapons/by/name/{sword}",
-            new { item }
-            );
-            return response!.Data;
+
+            _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", _accessToken);
+
+
+            var requestUrl = $"https://eu.api.blizzard.com/data/wow/search/item?locale=en_GB&namespace=static-classic-eu&orderby=level&name.en_US=sword";
+            
+ 
+            var response = await _httpClient.GetAsync(requestUrl);
+
+            response.EnsureSuccessStatusCode();
+
+            return await response.Content.ReadAsStringAsync();
+        
         }
-        record BlizzardSingleWeapon<T>(T Data);
-
-
-        public void Dispose()
-        {
-            _client?.Dispose();
-            GC.SuppressFinalize(this);
-        }
-
-
-
     }
 }
