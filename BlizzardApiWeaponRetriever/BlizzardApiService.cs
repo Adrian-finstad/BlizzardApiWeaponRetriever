@@ -4,6 +4,7 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
+using BlizzardApiWeaponRetriever.Controllers;
 using Microsoft.AspNetCore.Authentication.BearerToken;
 using Microsoft.OpenApi.Models;
 using Newtonsoft.Json;
@@ -58,7 +59,7 @@ namespace BlizzardApiWeaponRetriever
         }
 
 
-        public async Task<string> GetItemClassesIndex()
+        public async Task<string> RequestItems(string name)
         {
             if (string.IsNullOrEmpty(_accessToken))
             {
@@ -68,7 +69,7 @@ namespace BlizzardApiWeaponRetriever
             _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", _accessToken);
 
 
-            var requestUrl = $"https://eu.api.blizzard.com/data/wow/search/item?locale=en_GB&namespace=static-classic-eu&orderby=level&name.en_US=sword";
+            var requestUrl = $"https://eu.api.blizzard.com/data/wow/search/item?locale=en_US&namespace=static-classic1x-eu&name.en_US={name}";
             
  
             var response = await _httpClient.GetAsync(requestUrl);

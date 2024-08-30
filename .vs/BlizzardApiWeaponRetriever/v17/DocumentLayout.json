@@ -1,0 +1,117 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\adria\\source\\repos\\BlizzardApiWeaponRetriever\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{048E3DD5-81D4-4B9E-8E58-2D8290B763DB}|BlizzardApiWeaponRetriever\\BlizzardApiWeaponRetriever.csproj|c:\\users\\adria\\source\\repos\\blizzardapiweaponretriever\\blizzardapiweaponretriever\\controllers\\blizzardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{048E3DD5-81D4-4B9E-8E58-2D8290B763DB}|BlizzardApiWeaponRetriever\\BlizzardApiWeaponRetriever.csproj|solutionrelative:blizzardapiweaponretriever\\controllers\\blizzardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{048E3DD5-81D4-4B9E-8E58-2D8290B763DB}|BlizzardApiWeaponRetriever\\BlizzardApiWeaponRetriever.csproj|c:\\users\\adria\\source\\repos\\blizzardapiweaponretriever\\blizzardapiweaponretriever\\blizzardapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{048E3DD5-81D4-4B9E-8E58-2D8290B763DB}|BlizzardApiWeaponRetriever\\BlizzardApiWeaponRetriever.csproj|solutionrelative:blizzardapiweaponretriever\\blizzardapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{048E3DD5-81D4-4B9E-8E58-2D8290B763DB}|BlizzardApiWeaponRetriever\\BlizzardApiWeaponRetriever.csproj|c:\\users\\adria\\source\\repos\\blizzardapiweaponretriever\\blizzardapiweaponretriever\\weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{048E3DD5-81D4-4B9E-8E58-2D8290B763DB}|BlizzardApiWeaponRetriever\\BlizzardApiWeaponRetriever.csproj|solutionrelative:blizzardapiweaponretriever\\weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{048E3DD5-81D4-4B9E-8E58-2D8290B763DB}|BlizzardApiWeaponRetriever\\BlizzardApiWeaponRetriever.csproj|c:\\users\\adria\\source\\repos\\blizzardapiweaponretriever\\blizzardapiweaponretriever\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{048E3DD5-81D4-4B9E-8E58-2D8290B763DB}|BlizzardApiWeaponRetriever\\BlizzardApiWeaponRetriever.csproj|solutionrelative:blizzardapiweaponretriever\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{048E3DD5-81D4-4B9E-8E58-2D8290B763DB}|BlizzardApiWeaponRetriever\\BlizzardApiWeaponRetriever.csproj|c:\\users\\adria\\source\\repos\\blizzardapiweaponretriever\\blizzardapiweaponretriever\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{048E3DD5-81D4-4B9E-8E58-2D8290B763DB}|BlizzardApiWeaponRetriever\\BlizzardApiWeaponRetriever.csproj|solutionrelative:blizzardapiweaponretriever\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 334,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{80c411e8-fd5e-4b16-914b-0d9d84172cc1}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Weapon.cs",
+              "DocumentMoniker": "C:\\Users\\adria\\source\\repos\\BlizzardApiWeaponRetriever\\BlizzardApiWeaponRetriever\\Weapon.cs",
+              "RelativeDocumentMoniker": "BlizzardApiWeaponRetriever\\Weapon.cs",
+              "ToolTip": "C:\\Users\\adria\\source\\repos\\BlizzardApiWeaponRetriever\\BlizzardApiWeaponRetriever\\Weapon.cs",
+              "RelativeToolTip": "BlizzardApiWeaponRetriever\\Weapon.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T12:13:11.378Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\adria\\source\\repos\\BlizzardApiWeaponRetriever\\BlizzardApiWeaponRetriever\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "BlizzardApiWeaponRetriever\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\adria\\source\\repos\\BlizzardApiWeaponRetriever\\BlizzardApiWeaponRetriever\\ApplicationDbContext.cs",
+              "RelativeToolTip": "BlizzardApiWeaponRetriever\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T12:04:17.366Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\adria\\source\\repos\\BlizzardApiWeaponRetriever\\BlizzardApiWeaponRetriever\\Program.cs",
+              "RelativeDocumentMoniker": "BlizzardApiWeaponRetriever\\Program.cs",
+              "ToolTip": "C:\\Users\\adria\\source\\repos\\BlizzardApiWeaponRetriever\\BlizzardApiWeaponRetriever\\Program.cs",
+              "RelativeToolTip": "BlizzardApiWeaponRetriever\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T11:56:56.209Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BlizzardApiService.cs",
+              "DocumentMoniker": "C:\\Users\\adria\\source\\repos\\BlizzardApiWeaponRetriever\\BlizzardApiWeaponRetriever\\BlizzardApiService.cs",
+              "RelativeDocumentMoniker": "BlizzardApiWeaponRetriever\\BlizzardApiService.cs",
+              "ToolTip": "C:\\Users\\adria\\source\\repos\\BlizzardApiWeaponRetriever\\BlizzardApiWeaponRetriever\\BlizzardApiService.cs",
+              "RelativeToolTip": "BlizzardApiWeaponRetriever\\BlizzardApiService.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAcwB4AAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-28T19:59:03.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BlizzardController.cs",
+              "DocumentMoniker": "C:\\Users\\adria\\source\\repos\\BlizzardApiWeaponRetriever\\BlizzardApiWeaponRetriever\\Controllers\\BlizzardController.cs",
+              "RelativeDocumentMoniker": "BlizzardApiWeaponRetriever\\Controllers\\BlizzardController.cs",
+              "ToolTip": "C:\\Users\\adria\\source\\repos\\BlizzardApiWeaponRetriever\\BlizzardApiWeaponRetriever\\Controllers\\BlizzardController.cs",
+              "RelativeToolTip": "BlizzardApiWeaponRetriever\\Controllers\\BlizzardController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAACxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T11:55:30.516Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

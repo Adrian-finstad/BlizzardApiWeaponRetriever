@@ -1,4 +1,6 @@
 using dotenv.net;
+using Microsoft.EntityFrameworkCore;
+
 namespace BlizzardApiWeaponRetriever
 {
     public class Program
@@ -14,7 +16,9 @@ namespace BlizzardApiWeaponRetriever
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
-            
+
+            builder.Services.AddDbContext<ApplicationDbContext>(options =>
+            options.UseSqlServer(builder.Configuration.GetConnectionString("ConnectionString")));
 
 
             var app = builder.Build();
